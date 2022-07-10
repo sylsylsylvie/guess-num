@@ -1,9 +1,13 @@
 import random
-r = random.randint(1, 100)
+start = input('choose a range, from:')
+end= input('to:')
+start = int(start)
+end = int(end)
+r = random.randint(start, end)
 count = 0
 count = int(count)
 while True:
-    guess = input('guess a number, between 1 to 100:')
+    guess = input('guess a number:')
     guess = int(guess)
     count += 1
     if guess == r:
